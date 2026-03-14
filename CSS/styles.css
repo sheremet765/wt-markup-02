@@ -1,0 +1,371 @@
+/* ===== CSS ЗМІННІ ===== */
+:root {
+  --primary-color: #2196f3;
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --dark-bg-color: #2f303a;
+  --light-bg-color: #f5f4fa;
+  --border-color: #ececec;
+  --icon-color: #afb1b8;
+  --hover-button-color: #188ce8;
+  --footer-link-color: rgba(255, 255, 255, 0.6);
+  --footer-social-bg: rgba(255, 255, 255, 0.1);
+}
+
+/* ===== СКИДАННЯ СТИЛІВ ===== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', 'Arial', 'Helvetica', sans-serif;
+  color: var(--primary-text-color);
+  background-color: var(--white-color);
+  min-width: 1600px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+}
+
+/* ===== HEADER ===== */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 215px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 95px;
+}
+
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  color: var(--primary-color);
+}
+
+.logo-part {
+  color: var(--black-color);
+}
+
+.logo-footer {
+  display: inline-block;
+  margin-bottom: 22px;
+  color: var(--primary-color);
+}
+
+.logo-footer .logo-part {
+  color: var(--white-color);
+}
+
+.nav-list {
+  display: flex;
+  gap: 55px;
+}
+
+.nav-link {
+  font-weight: 500;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--primary-color);
+}
+
+.contacts-list {
+  display: flex;
+  gap: 35px;
+}
+
+.contacts-link {
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--secondary-text-color);
+  transition: color 0.3s;
+}
+
+.contacts-link:hover,
+.contacts-link:focus {
+  color: var(--primary-color);
+}
+
+/* ===== HERO СЕКЦІЯ ===== */
+.hero {
+  background-color: var(--dark-bg-color);
+  padding: 200px 215px;
+  text-align: center;
+}
+
+.hero-title {
+  max-width: 696px;
+  margin: 0 auto 30px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-transform: uppercase;
+  color: var(--white-color);
+  letter-spacing: 0.06em;
+}
+
+.hero-btn {
+  padding: 12px 35px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.88;
+  color: var(--white-color);
+  background-color: var(--primary-color);
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: var(--hover-button-color);
+}
+
+/* ===== ПЕРЕВАГИ ===== */
+.features {
+  padding: 94px 215px;
+}
+
+.features-list {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.features-item {
+  flex: 1;
+  max-width: 270px;
+}
+
+.features-text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+
+/* Іконки переваг */
+.features-icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  background-color: var(--light-bg-color);
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.features-icon {
+  fill: var(--primary-text-color);
+}
+
+.features-title {
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+/* ===== РОБОТИ ===== */
+.works {
+  padding: 0 215px 94px;
+}
+
+.section-title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+}
+
+.works-list {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.works-item img {
+  border-radius: 10px;
+}
+
+/* ===== КОМАНДА ===== */
+.team {
+  background-color: var(--light-bg-color);
+  padding: 94px 215px;
+}
+
+.team-list {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.team-item {
+  background-color: var(--white-color);
+  text-align: center;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow:
+    0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.team-item img {
+  border-radius: 0;
+  width: 100%;
+}
+
+.team-name {
+  margin-top: 32px;
+  margin-bottom: 12px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.team-position {
+  margin-bottom: 18px;
+  font-size: 16px;
+  color: var(--secondary-text-color);
+}
+
+/* Іконки соцмереж */
+.social-list {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: transparent;
+  transition: background-color 0.3s;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--primary-color);
+}
+
+.social-icon {
+  fill: var(--icon-color);
+  transition: fill 0.3s;
+}
+
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
+  fill: var(--white-color);
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  background-color: var(--dark-bg-color);
+  padding: 60px 215px;
+  color: var(--white-color);
+}
+
+.footer-content {
+  display: flex;
+  gap: 70px;
+  align-items: baseline;
+}
+
+.address {
+  font-style: normal;
+}
+
+.address-text {
+  margin-bottom: 12px;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.address-link {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--footer-link-color);
+  transition: color 0.3s;
+}
+
+.address-link:hover,
+.address-link:focus {
+  color: var(--primary-color);
+}
+
+/* Соцмережі в футері */
+.footer-social-title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+
+.footer-social-list {
+  padding-bottom: 0;
+}
+
+.footer-social-link {
+  background-color: var(--footer-social-bg);
+}
+
+.footer-social-link .social-icon {
+  fill: var(--white-color);
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: var(--primary-color);
+}
